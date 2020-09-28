@@ -1,14 +1,15 @@
 require "pry"
 
 def find_min_in_nested_arrays(src)
-  outer_results = []
+  min_temp_array = []
   row_index = 0
+  smallest_num = 80
   while row_index < src.count do
     element_index = 0
-    array_2 = []
+    smallest_num = 
     while element_index < src[row_index].count do
-      if src[row_index][element_index].min > array_2.min
-        array_2 = src[row_index][element_index]
+      if src[row_index][element_index] < smallest_num 
+        smallest_num = src[row_index][element_index]
     end
     element_index += 1
 
